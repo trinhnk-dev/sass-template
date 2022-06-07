@@ -163,15 +163,3 @@ body {
   display: block;
   max-width: 100%;
 }
-
-.information {
-  .row {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-    padding: 10px;
-    .information-item {
-      justify-content: center;
-    }
-  }
-}

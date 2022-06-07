@@ -196,19 +196,4 @@ body {
   display: block;
   max-width: 100%;
 }
-
-.information .row {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
-  gap: 10px;
-  padding: 10px;
-}
-
-.information .row .information-item {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 /*# sourceMappingURL=style.css.map */
