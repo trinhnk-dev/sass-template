@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1260px;
+  max-width: 1230px;
 }
 
 .body-content {
@@ -162,4 +162,267 @@ body {
   height: auto;
   display: block;
   max-width: 100%;
+}
+
+.information {
+  background: $color-purple-300;
+  position: relative;
+  z-index: 99;
+  .row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    .row-top {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-top: 40px;
+
+      .card {
+        width: 100%;
+        flex-basis: 22%;
+        border-radius: 15px;
+        transition: all 300ms ease-in-out;
+      }
+      .card:hover {
+        box-shadow: 0 30px 30px -10px #00000033;
+        transition: all 300ms ease-in-out;
+      }
+      .card img {
+        position: relative;
+        transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+        width: 100%;
+        z-index: 99;
+        height: auto;
+      }
+      .card-img {
+        overflow: hidden;
+        width: 100%;
+      }
+      .card img:hover {
+        transform: scale(1.05, 1.05);
+        transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+      }
+    }
+    .card span {
+      color: $color-purple-600;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    }
+    .card h3 {
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    }
+    .card p {
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+  .row-top img {
+    border-radius: 15px 15px 0px 0px;
+  }
+  .row-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    .card {
+      width: 100%;
+      flex-basis: 22%;
+      border-radius: 15px;
+      transition: all 300ms ease-in-out;
+    }
+    .card:hover {
+      box-shadow: 0 30px 30px -10px #00000033;
+      transition: all 300ms ease-in-out;
+    }
+    .card span {
+      color: $color-purple-600;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    }
+    .card h3 {
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    }
+    .card p {
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+  .row-bottom img {
+    border-radius: 15px 15px 0px 0px;
+  }
+  .card img {
+    transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+  }
+  .card-img {
+    overflow: hidden;
+  }
+  .card img:hover {
+    transform: scale(1.05, 1.05);
+    transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+  }
+}
+
+.img-information-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.img-information-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.course {
+  padding: 150px 0px;
+  .row {
+    display: flex;
+    justify-content: center;
+    .course-left {
+      width: 48%;
+    }
+    .course-left img {
+      display: block;
+      margin: 0;
+      line-height: 0;
+      max-width: 100%;
+      height: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .course-right {
+      width: 35%;
+
+      .course-content {
+        background-color: rgba(255, 255, 255, 1);
+        padding-left: 25px;
+        padding-right: 25px;
+        .course-title h3 {
+          font-size: 38px;
+          font-weight: 700;
+          overflow-wrap: inherit;
+          font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        }
+        .row-box {
+          display: flex;
+          flex-wrap: wrap;
+          .name-box {
+            -webkit-flex: 1 0 50%;
+            -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+            max-width: 50%;
+            padding-right: 1em;
+            position: relative;
+            .icon-name {
+              position: absolute;
+              top: 1em;
+              left: 1em;
+              line-height: 1;
+              z-index: 10;
+              color: $color-purple-600;
+            }
+            .enter-name {
+              position: relative;
+              input {
+                border-radius: 50px;
+                padding: 1em 1em 1em 3.5em !important;
+                font-size: 0.8em !important;
+                height: 3.7em;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                -webkit-appearance: none;
+                width: 100%;
+              }
+            }
+          }
+
+          .email-box {
+            -webkit-flex: 1 0 50%;
+            -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+            max-width: 50%;
+            position: relative;
+            .icon-email {
+              position: absolute;
+              top: 1em;
+              left: 1em;
+              line-height: 1;
+              z-index: 10;
+              color: $color-purple-600;
+            }
+            .enter-email {
+              position: relative;
+              input {
+                border-radius: 50px;
+                padding: 1em 1em 1em 3.5em !important;
+                font-size: 0.8em !important;
+                height: 3.7em;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                -webkit-appearance: none;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .language-select {
+          position: relative;
+          border-radius: 50px;
+          padding: 1em 1em 1em 3.5em !important;
+          font-size: 0.8em !important;
+          height: 3.7em;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          -webkit-appearance: none;
+          width: 100%;
+
+          #inputLanguage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50px;
+            padding: 1em 1em 1em 3.5em !important;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            -webkit-appearance: none;
+            width: 100%;
+            cursor: pointer;
+          }
+          .language-icon {
+            position: absolute;
+            top: 13px;
+            left: 15px;
+            color: $color-purple-600;
+            cursor: pointer;
+          }
+          .language-angle {
+            position: absolute;
+            top: 13px;
+            right: 15px;
+            color: $color-purple-600;
+            cursor: pointer;
+          }
+        }
+        .message {
+          .textarea {
+            position: relative;
+            border-radius: 50px;
+            padding: 1em 1em 1em 3.5em !important;
+            font-size: 0.8em !important;
+            height: 3.7em;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            -webkit-appearance: none;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
